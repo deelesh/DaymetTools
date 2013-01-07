@@ -1,2 +1,2 @@
-ArcGIS geoprocessing tool to process daily gridded surface data from Daymet. The tool can be run with ArcGIS 10.1 software.
+ArcGIS geoprocessing toolbox containing tools to process daily gridded surface data from Daymet. The tool can be run with ArcGIS 10.1 software.
 More information about daymet data can be found at http://daymet.ornl.gov/
