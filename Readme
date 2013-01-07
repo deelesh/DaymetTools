@@ -1,2 +1,13 @@
 ArcGIS geoprocessing toolbox containing tools to process daily gridded surface data from Daymet. The tool can be run with ArcGIS 10.1 software.
 More information about daymet data can be found at http://daymet.ornl.gov/
+
+Using multiple CPU cores
+
+The tool demonstrates how to use multiple CPU cores to improve the overall execution time. Processing 9 daymet files using a single core took about five hours. But the same processing completed in about one hour when run on 4 cores. The parallel processing was implemented using the multiprocessing module from the Python standard library.
+
+Other features
+
+Shows how to run multiprocessing from within a python toolbox tool. Since the tools in the python toolboxes run in the embedded process (ArcMap.exe or ArcCatalog.exe), multiprocessing can not be used directly. So the tool launches a standalone python file using the subprocess module. The standalone python file uses multiprocessing module to launch multiple worker processes that perform parellel processing.
+
+Shows how to provide a UI for a Python script by using a Python toolbox (PYT files, new in ArcGIS version 10.1)
+ 
